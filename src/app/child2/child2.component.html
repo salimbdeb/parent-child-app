@@ -1,0 +1,14 @@
+<form [formGroup]="profileForm">
+  
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName">
+  </label>
+<br>
+<br>
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName" (keyup)="sendEventToParent()">
+  </label>
+
+</form>
